@@ -1,0 +1,2 @@
+
+openExample('simscape/PEMFuelCellSystemExample')
