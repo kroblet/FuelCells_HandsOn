@@ -17,7 +17,7 @@ for i = 1:length(pressureDropValues)
     simInput(i) = setVariable(simInput(i), 'NPressureDrop', pressureDropValues(i));
 
     % Définit la fonction de post-traitement
-    simInput(i) = setPostSimFcn(simInputArray(i), @(x) postProcessFcn(x)); 
+    simInput(i) = setPostSimFcn(simInput(i), @(x) postProcessFcn(x)); 
 end
 
 % Exécute la simulation
